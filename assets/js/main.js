@@ -42,7 +42,7 @@ const T = {
     'ft-l':'Tipo de projeto','ft-p':'YouTube, Reels, Comercial...',
     'fm-l':'Me conta mais','fm-p':'Descreva o projeto, prazos, referências...',
     'fsub':'Enviar mensagem ✨',
-    'footer':'© 2025 FrameCut Studio. Feito com 💜 em Natal, RN.',
+    'footer':'© 2025 FrameCut Studio.',
     'load-more':'Ver mais',
   },
   en: {
