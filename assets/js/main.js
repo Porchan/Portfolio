@@ -33,7 +33,7 @@ const T = {
     't2r':'Fundadora — Marca de Moda',
     't3':'O comercial ficou melhor do que esperávamos. Comunicação impecável durante todo o processo e entregou antes do prazo. Super recomendo!',
     't3r':'CEO — Startup de Tech',
-    'con-label':'Contato','con-title':'Bora criar algo <em>incrível?</em>',
+    'con-label':'Contato','con-title':'Vamos criar algo <em>incrível?</em>',
     'con-desc':'Me conta o seu projeto. Respondo em até 24 horas e adoramos um bom papo sobre criatividade.',
     'con-loc':'Localização','con-loc-v':'Natal, RN — Brasil',
     'con-time':'Prazo médio','con-time-v':'3 a 7 dias úteis',
