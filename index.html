@@ -5,174 +5,185 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="FrameCut Studio — Portfólio de edição de vídeo. YouTube, Reels, Publicidade e Color Grading.">
   <title>FrameCut Studio — Portfólio</title>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- LANG TOGGLE -->
-  <div class="lang-toggle">
-    <button class="lang-btn active" id="btn-pt" onclick="setLang('pt')">🇧🇷 PT</button>
-    <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇺🇸 EN</button>
+<!-- LANG -->
+<div class="lang-toggle">
+  <button class="lang-btn active" id="btn-pt" onclick="setLang('pt')">🇧🇷 PT</button>
+  <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇺🇸 EN</button>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Frame<span>Cut</span> <div class="nav-dot"></div></a>
+  <ul class="nav-links">
+    <li><a href="#servicos" data-t="nav-services">Serviços</a></li>
+    <li><a href="#portfolio" data-t="nav-portfolio">Portfólio</a></li>
+    <li><a href="#processo" data-t="nav-process">Processo</a></li>
+    <li><a href="#contato" class="nav-cta" data-t="nav-cta">Falar comigo</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blobs"><div class="blob blob1"></div><div class="blob blob2"></div><div class="blob blob3"></div></div>
+  <div class="hero-badge"><span class="badge-dot"></span><span data-t="hero-badge">Disponível para projetos</span></div>
+  <h1 class="hero-title">
+    <span data-t="hero-l1">Edição que</span>
+    <span class="l2" data-t="hero-l2">prende o</span>
+    <span class="l3" data-t="hero-l3">olhar.</span>
+  </h1>
+  <p class="hero-sub" data-t="hero-sub">Transformo imagens brutas em histórias que as pessoas não conseguem parar de assistir. YouTube, Reels, comerciais — do corte ao color grade.</p>
+  <div class="hero-btns">
+    <a href="#demoreel" class="btn-primary" data-t="hero-btn1">Ver meus trabalhos ↓</a>
+    <a href="#contato" class="btn-outline" data-t="hero-btn2">Vamos conversar</a>
   </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span data-t="scroll">scroll</span></div>
+</section>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#" class="nav-logo">Frame<span>Cut</span> <div class="nav-dot"></div></a>
-    <ul class="nav-links">
-      <li><a href="#servicos" data-t="nav-services">Serviços</a></li>
-      <li><a href="#portfolio" data-t="nav-portfolio">Portfólio</a></li>
-      <li><a href="#processo" data-t="nav-process">Processo</a></li>
-      <li><a href="#contato" class="nav-cta" data-t="nav-cta">Falar comigo</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-blobs">
-      <div class="blob blob1"></div>
-      <div class="blob blob2"></div>
-      <div class="blob blob3"></div>
+<!-- DEMOREEL -->
+<div class="section" id="demoreel">
+  <div class="container">
+    <div class="reel-header">
+      <div class="section-label center" style="justify-content:center;margin-bottom:1.5rem" data-t="reel-label">Demoreel</div>
     </div>
-    <div class="hero-badge"><span class="badge-dot"></span><span data-t="hero-badge">Disponível para projetos</span></div>
-    <h1 class="hero-title">
-      <span data-t="hero-l1">Edição que</span>
-      <span class="l2" data-t="hero-l2">prende o</span>
-      <span class="l3" data-t="hero-l3">olhar.</span>
-    </h1>
-    <p class="hero-sub" data-t="hero-sub">Transformo imagens brutas em histórias que as pessoas não conseguem parar de assistir. YouTube, Reels, comerciais — do corte ao color grade.</p>
-    <div class="hero-btns">
-      <a href="#portfolio" class="btn-primary" data-t="hero-btn1">Ver meus trabalhos ↓</a>
-      <a href="#contato" class="btn-outline" data-t="hero-btn2">Vamos conversar</a>
-    </div>
-    <div class="hero-scroll"><div class="scroll-line"></div><span data-t="scroll">scroll</span></div>
-  </section>
-
-  <!-- STATS -->
-  <div class="stats-row reveal">
-    <div class="stat"><div class="stat-number">120+</div><div class="stat-label" data-t="stat1">Projetos entregues</div></div>
-    <div class="stat"><div class="stat-number">50M+</div><div class="stat-label" data-t="stat2">Visualizações geradas</div></div>
-    <div class="stat"><div class="stat-number">40+</div><div class="stat-label" data-t="stat3">Clientes satisfeitos</div></div>
-    <div class="stat"><div class="stat-number">4</div><div class="stat-label" data-t="stat4">Anos de experiência</div></div>
-  </div>
-
-  <!-- SERVICES -->
-  <div class="section" id="servicos">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-label" data-t="svc-label">O que eu faço</div>
-        <h2 class="section-title" data-t="svc-title">Serviços <em>criativos</em></h2>
-        <p class="section-desc" data-t="svc-desc">De vlogs relaxados a comerciais de alto impacto — entrego edições que encaixam no ritmo certo de cada plataforma.</p>
-      </div>
-      <div class="services-grid reveal">
-        <div class="service-card"><div class="service-icon">🎬</div><div class="service-title" data-t="s1t">YouTube & Vlogs</div><div class="service-desc" data-t="s1d">Cortes dinâmicos, motion graphics, legendas e color grading para canais que querem crescer de verdade.</div></div>
-        <div class="service-card"><div class="service-icon">📱</div><div class="service-title" data-t="s2t">Reels & TikTok</div><div class="service-desc" data-t="s2d">Edições ritmadas, transitions criativas e hooks que prendem a atenção nos primeiros 3 segundos.</div></div>
-        <div class="service-card"><div class="service-icon">📢</div><div class="service-title" data-t="s3t">Publicidade</div><div class="service-desc" data-t="s3d">Comerciais que vendem. Do produto ao storytelling, cuido de cada detalhe para gerar conversão.</div></div>
-        <div class="service-card"><div class="service-icon">✨</div><div class="service-title" data-t="s4t">Color Grading</div><div class="service-desc" data-t="s4d">Paletas de cores que criam identidade visual única e fazem seu conteúdo ser reconhecido instantaneamente.</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- PORTFOLIO -->
-  <div class="section alt" id="portfolio">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-label" data-t="port-label">Trabalhos</div>
-        <h2 class="section-title" data-t="port-title">Meu <em>portfólio</em></h2>
-        <p class="section-desc" data-t="port-desc">Uma seleção dos projetos mais recentes — cada um com uma linguagem visual única.</p>
-      </div>
-      <div class="filter-row reveal">
-        <button class="filter-btn active" data-filter="all" data-t="f-all">Todos</button>
-        <button class="filter-btn" data-filter="YouTube">YouTube</button>
-        <button class="filter-btn" data-filter="Reels">Reels</button>
-        <button class="filter-btn" data-filter="Publicidade" data-t="f-ads">Publicidade</button>
-      </div>
-      <div class="portfolio-grid reveal" id="portfolioGrid"></div>
-    </div>
-  </div>
-
-  <!-- PROCESS -->
-  <div class="section" id="processo">
-    <div class="container" style="max-width:740px">
-      <div class="reveal">
-        <div class="section-label" data-t="proc-label">Como trabalho</div>
-        <h2 class="section-title" data-t="proc-title">Do brief à <em>entrega</em></h2>
-        <p class="section-desc" data-t="proc-desc">Processo simples, comunicação clara e resultado que supera o que você imaginou.</p>
-      </div>
-      <div class="process-steps reveal">
-        <div class="process-step"><div class="step-num">01</div><div><div class="step-title" data-t="st1t">Briefing & Referências</div><div class="step-desc" data-t="st1d">A gente conversa sobre o projeto, público-alvo, plataforma e referências visuais. Quanto mais contexto, melhor o resultado.</div></div></div>
-        <div class="process-step"><div class="step-num">02</div><div><div class="step-title" data-t="st2t">Recebimento do Material</div><div class="step-desc" data-t="st2d">Você envia o footage bruto + trilhas + qualquer asset necessário. Organizo tudo antes de começar.</div></div></div>
-        <div class="process-step"><div class="step-num">03</div><div><div class="step-title" data-t="st3t">Edição + Color Grading</div><div class="step-desc" data-t="st3d">Aqui acontece a mágica. Corte rítmico, color grade, motion graphics — tudo pensado para o objetivo do vídeo.</div></div></div>
-        <div class="process-step"><div class="step-num">04</div><div><div class="step-title" data-t="st4t">Revisões & Entrega</div><div class="step-desc" data-t="st4d">Você recebe uma prévia, sugere ajustes e eu entrego o arquivo final em alta qualidade no prazo combinado.</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- TESTIMONIALS -->
-  <div class="section alt">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-label" data-t="test-label">Depoimentos</div>
-        <h2 class="section-title" data-t="test-title">O que os clientes <em>falam</em></h2>
-      </div>
-      <div class="test-grid reveal">
-        <div class="test-card"><div class="stars">★★★★★</div><div class="test-text" data-t="t1">Meu canal explodiu depois que comecei a trabalhar com essa edição. A qualidade é surreal — cada corte no tempo certo, a narrativa flui perfeitamente.</div><div class="test-author"><div class="test-avatar av1">🧑</div><div><div class="test-name">Lucas Mendes</div><div class="test-role" data-t="t1r">Youtuber — 280k inscritos</div></div></div></div>
-        <div class="test-card"><div class="stars">★★★★★</div><div class="test-text" data-t="t2">Nossos reels tiveram 3x mais alcance. A edição entende o ritmo do Instagram melhor do que qualquer outro editor que já contratamos.</div><div class="test-author"><div class="test-avatar av2">👩</div><div><div class="test-name">Ana Beatriz</div><div class="test-role" data-t="t2r">Fundadora — Marca de Moda</div></div></div></div>
-        <div class="test-card"><div class="stars">★★★★★</div><div class="test-text" data-t="t3">O comercial ficou melhor do que esperávamos. Comunicação impecável durante todo o processo e entregou antes do prazo. Super recomendo!</div><div class="test-author"><div class="test-avatar av3">🧔</div><div><div class="test-name">Rafael Costa</div><div class="test-role" data-t="t3r">CEO — Startup de Tech</div></div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="section" id="contato">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-label" data-t="con-label">Contato</div>
-        <h2 class="section-title" data-t="con-title">Bora criar algo <em>incrível?</em></h2>
-        <p class="section-desc" data-t="con-desc">Me conta o seu projeto. Respondo em até 24 horas e adoramos um bom papo sobre criatividade.</p>
-      </div>
-      <div class="contact-grid reveal">
-        <div>
-          <div class="contact-items">
-            <div class="contact-item"><div class="c-icon">📧</div><div><div class="c-label">Email</div><div class="c-value">oi@framecut.studio</div></div></div>
-            <div class="contact-item"><div class="c-icon">💬</div><div><div class="c-label">WhatsApp</div><div class="c-value">+55 (84) 9 9999-9999</div></div></div>
-            <div class="contact-item"><div class="c-icon">📍</div><div><div class="c-label" data-t="con-loc">Localização</div><div class="c-value" data-t="con-loc-v">Natal, RN — Brasil</div></div></div>
-            <div class="contact-item"><div class="c-icon">⏱️</div><div><div class="c-label" data-t="con-time">Prazo médio</div><div class="c-value" data-t="con-time-v">3 a 7 dias úteis</div></div></div>
-          </div>
+    <div class="reel-wrapper">
+      <!-- Troque SEU_ID_AQUI pelo ID do seu vídeo no YouTube -->
+      <div class="reel-placeholder" id="reelPlaceholder">
+        <div class="reel-glow"></div>
+        <div class="reel-play-btn" id="reelPlayBtn"><div class="reel-play-icon">▶</div></div>
+        <div class="reel-label-overlay">
+          <span data-t="reel-overlay">Demoreel 2025</span>
+          <div class="reel-duration">2:47</div>
         </div>
-        <div class="contact-form">
-          <div class="form-group"><label class="form-label" data-t="fn-l">Seu nome</label><input type="text" class="form-input" data-tp="fn-p" placeholder="Como posso te chamar?"></div>
-          <div class="form-group"><label class="form-label" data-t="fc-l">Email ou WhatsApp</label><input type="text" class="form-input" data-tp="fc-p" placeholder="Para eu te responder"></div>
-          <div class="form-group"><label class="form-label" data-t="ft-l">Tipo de projeto</label><input type="text" class="form-input" data-tp="ft-p" placeholder="YouTube, Reels, Comercial..."></div>
-          <div class="form-group"><label class="form-label" data-t="fm-l">Me conta mais</label><textarea class="form-textarea" data-tp="fm-p" placeholder="Descreva o projeto, prazos, referências..."></textarea></div>
-          <button class="form-submit" data-t="fsub">Enviar mensagem ✨</button>
+        <div class="reel-hint" data-t="reel-hint">Cole o link do seu YouTube no código para ativar</div>
+      </div>
+      <iframe id="reelIframe" class="reel-iframe hidden"
+        src="" data-src="https://www.youtube.com/embed/SEU_ID_AQUI?autoplay=1&rel=0&modestbranding=1"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat"><div class="stat-number">120+</div><div class="stat-label" data-t="stat1">Projetos entregues</div></div>
+  <div class="stat"><div class="stat-number">50M+</div><div class="stat-label" data-t="stat2">Visualizações geradas</div></div>
+  <div class="stat"><div class="stat-number">40+</div><div class="stat-label" data-t="stat3">Clientes satisfeitos</div></div>
+  <div class="stat"><div class="stat-number">4</div><div class="stat-label" data-t="stat4">Anos de experiência</div></div>
+</div>
+
+<!-- SERVICES -->
+<div class="section" id="servicos">
+  <div class="container">
+    <div class="section-label" data-t="svc-label">O que eu faço</div>
+    <h2 class="section-title" data-t="svc-title">Serviços <em>criativos</em></h2>
+    <p class="section-desc" data-t="svc-desc">De vlogs relaxados a comerciais de alto impacto — entrego edições que encaixam no ritmo certo de cada plataforma.</p>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon">🎬</div><div class="service-title" data-t="s1t">YouTube & Vlogs</div><div class="service-desc" data-t="s1d">Cortes dinâmicos, motion graphics, legendas e color grading para canais que querem crescer de verdade.</div></div>
+      <div class="service-card"><div class="service-icon">📱</div><div class="service-title" data-t="s2t">Reels & TikTok</div><div class="service-desc" data-t="s2d">Edições ritmadas, transitions criativas e hooks que prendem a atenção nos primeiros 3 segundos.</div></div>
+      <div class="service-card"><div class="service-icon">📢</div><div class="service-title" data-t="s3t">Publicidade</div><div class="service-desc" data-t="s3d">Comerciais que vendem. Do produto ao storytelling, cuido de cada detalhe para gerar conversão.</div></div>
+      <div class="service-card"><div class="service-icon">✨</div><div class="service-title" data-t="s4t">Color Grading</div><div class="service-desc" data-t="s4d">Paletas de cores que criam identidade visual única e fazem seu conteúdo ser reconhecido instantaneamente.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div class="section alt" id="portfolio">
+  <div class="container">
+    <div class="section-label" data-t="port-label">Trabalhos</div>
+    <h2 class="section-title" data-t="port-title">Meu <em>portfólio</em></h2>
+    <p class="section-desc" data-t="port-desc">Uma seleção dos projetos mais recentes — cada um com uma linguagem visual única.</p>
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all" data-t="f-all">Todos</button>
+      <button class="filter-btn" data-filter="YouTube">YouTube</button>
+      <button class="filter-btn" data-filter="Reels">Reels</button>
+      <button class="filter-btn" data-filter="Publicidade" data-t="f-ads">Publicidade</button>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid"></div>
+    <div class="load-more-row" id="loadMoreRow">
+      <button class="load-more-btn" id="loadMoreBtn">
+        <span class="load-more-icon">+</span>
+        <span data-t="load-more">Ver mais</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<div class="section" id="processo">
+  <div class="container" style="max-width:740px">
+    <div class="section-label" data-t="proc-label">Como trabalho</div>
+    <h2 class="section-title" data-t="proc-title">Do brief à <em>entrega</em></h2>
+    <p class="section-desc" data-t="proc-desc">Processo simples, comunicação clara e resultado que supera o que você imaginou.</p>
+    <div class="process-steps">
+      <div class="process-step"><div class="step-num">01</div><div><div class="step-title" data-t="st1t">Briefing & Referências</div><div class="step-desc" data-t="st1d">A gente conversa sobre o projeto, público-alvo, plataforma e referências visuais. Quanto mais contexto, melhor o resultado.</div></div></div>
+      <div class="process-step"><div class="step-num">02</div><div><div class="step-title" data-t="st2t">Recebimento do Material</div><div class="step-desc" data-t="st2d">Você envia o footage bruto + trilhas + qualquer asset necessário. Organizo tudo antes de começar.</div></div></div>
+      <div class="process-step"><div class="step-num">03</div><div><div class="step-title" data-t="st3t">Edição + Color Grading</div><div class="step-desc" data-t="st3d">Aqui acontece a mágica. Corte rítmico, color grade, motion graphics — tudo pensado para o objetivo do vídeo.</div></div></div>
+      <div class="process-step"><div class="step-num">04</div><div><div class="step-title" data-t="st4t">Revisões & Entrega</div><div class="step-desc" data-t="st4d">Você recebe uma prévia, sugere ajustes e eu entrego o arquivo final em alta qualidade no prazo combinado.</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="section alt">
+  <div class="container">
+    <div class="section-label" data-t="test-label">Depoimentos</div>
+    <h2 class="section-title" data-t="test-title">O que os clientes <em>falam</em></h2>
+    <div class="test-grid">
+      <div class="test-card"><div class="stars">★★★★★</div><div class="test-text" data-t="t1">Meu canal explodiu depois que comecei a trabalhar com essa edição. A qualidade é surreal — cada corte no tempo certo, a narrativa flui perfeitamente.</div><div class="test-author"><div class="test-avatar av1">🧑</div><div><div class="test-name">Lucas Mendes</div><div class="test-role" data-t="t1r">Youtuber — 280k inscritos</div></div></div></div>
+      <div class="test-card"><div class="stars">★★★★★</div><div class="test-text" data-t="t2">Nossos reels tiveram 3x mais alcance. A edição entende o ritmo do Instagram melhor do que qualquer outro editor que já contratamos.</div><div class="test-author"><div class="test-avatar av2">👩</div><div><div class="test-name">Ana Beatriz</div><div class="test-role" data-t="t2r">Fundadora — Marca de Moda</div></div></div></div>
+      <div class="test-card"><div class="stars">★★★★★</div><div class="test-text" data-t="t3">O comercial ficou melhor do que esperávamos. Comunicação impecável durante todo o processo e entregou antes do prazo. Super recomendo!</div><div class="test-author"><div class="test-avatar av3">🧔</div><div><div class="test-name">Rafael Costa</div><div class="test-role" data-t="t3r">CEO — Startup de Tech</div></div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contato">
+  <div class="container">
+    <div class="section-label" data-t="con-label">Contato</div>
+    <h2 class="section-title" data-t="con-title">Bora criar algo <em>incrível?</em></h2>
+    <p class="section-desc" data-t="con-desc">Me conta o seu projeto. Respondo em até 24 horas e adoramos um bom papo sobre criatividade.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-items">
+          <div class="contact-item"><div class="c-icon">📧</div><div><div class="c-label">Email</div><div class="c-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="07686e476175666a6264727329747372636e68">[email&#160;protected]</a></div></div></div>
+          <div class="contact-item"><div class="c-icon">💬</div><div><div class="c-label">WhatsApp</div><div class="c-value">+55 (84) 9 9999-9999</div></div></div>
+          <div class="contact-item"><div class="c-icon">📍</div><div><div class="c-label" data-t="con-loc">Localização</div><div class="c-value" data-t="con-loc-v">Natal, RN — Brasil</div></div></div>
+          <div class="contact-item"><div class="c-icon">⏱️</div><div><div class="c-label" data-t="con-time">Prazo médio</div><div class="c-value" data-t="con-time-v">3 a 7 dias úteis</div></div></div>
         </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-group"><label class="form-label" data-t="fn-l">Seu nome</label><input type="text" class="form-input" data-tp="fn-p" placeholder="Como posso te chamar?"></div>
+        <div class="form-group"><label class="form-label" data-t="fc-l">Email ou WhatsApp</label><input type="text" class="form-input" data-tp="fc-p" placeholder="Para eu te responder"></div>
+        <div class="form-group"><label class="form-label" data-t="ft-l">Tipo de projeto</label><input type="text" class="form-input" data-tp="ft-p" placeholder="YouTube, Reels, Comercial..."></div>
+        <div class="form-group"><label class="form-label" data-t="fm-l">Me conta mais</label><textarea class="form-textarea" data-tp="fm-p" placeholder="Descreva o projeto, prazos, referências..."></textarea></div>
+        <button class="form-submit" data-t="fsub">Enviar mensagem ✨</button>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-logo">Frame<span>Cut</span> Studio</div>
-    <div class="footer-copy" data-t="footer">© 2025 FrameCut Studio. Feito com 💜 em Natal, RN.</div>
-    <div class="footer-socials">
-      <a href="#" class="social-btn">📸</a>
-      <a href="#" class="social-btn">▶️</a>
-      <a href="#" class="social-btn">💼</a>
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Frame<span>Cut</span> Studio</div>
+  <div class="footer-copy" data-t="footer">© 2025 FrameCut Studio. Feito com 💜 em Natal, RN.</div>
+  <div class="footer-socials">
+    <a href="#" class="social-btn">📸</a>
+    <a href="#" class="social-btn">▶️</a>
+    <a href="#" class="social-btn">💼</a>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
